@@ -25,18 +25,24 @@ body{
 }
 
 .main{
-   margin: auto;
+   margin: 40px auto;
+}
+
+.section{
 }
 
 .content{
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   margin: 30px auto;
-   width: 50%;
+   margin: 1px auto;
+   width: 90%;
    background-color: whitesmoke;
    border-radius: 5px;
+   padding: 5px 20px;
 }
+
 
 .activity-due-date{
    font-weight: bold;
@@ -44,6 +50,7 @@ body{
 
 p{
    margin: 10px;
+   text-align: center;
 }
 
 input{

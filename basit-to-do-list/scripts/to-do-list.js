@@ -30,14 +30,15 @@ function updateInterface(){
    activity.activityName.forEach((value, index) => {
       content += `
          <div class="content" id="${index}">
-         <p class="activity-name">${activity.activityName[index]}</p>
-         <p class="activity-due-date">${activity.dueDate[index]}</p>
-         <button class="btn-remove" onclick="remove(${index})">Hapus</button>
+            <p class="">${index+1}.</p>
+            <p class="activity-name">${activity.activityName[index]}</p>
+            <p class="activity-due-date">${activity.dueDate[index]}</p>
+            <button class="btn-remove" onclick="remove(${index})">Delete</button>
          </div>
       `;
    });
    // tampilkan konten ke html
-   document.querySelector('.main').innerHTML = content;
+   document.querySelector('.section').innerHTML = content;
    // mengosongkan value dari konten
    content = '';
 }
@@ -49,18 +50,5 @@ function remove(activityId){
    // hapus tampilan aktivitas
    document.getElementById(activityId).remove();
    
-   // pengulangan dalam object
-   activity.activityName.forEach((value, index) => {
-      content += `
-         <div class="content" id="${index}">
-         <p class="activity-name">${activity.activityName[index]}</p>
-         <p class="activity-due-date">${activity.dueDate[index]}</p>
-         <button class="btn-remove" onclick="remove(${index})">Hapus</button>
-         </div>
-      `;
-   });
-   // tampilkan konten ke html
-   document.querySelector('.main').innerHTML = content;
-   // mengosongkan value dari konten
-   content = '';
+   updateInterface();
 }
