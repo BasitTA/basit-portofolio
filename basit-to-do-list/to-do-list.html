@@ -8,10 +8,17 @@
 </head>
 <body>
    <div class="header">
-      <h1>Aktivitas Harian</h1>
-      <input type="text" class="rounded-element" id="activityName" placeholder="nama aktivitas" value="Belajar React.js">
-      <input type="date" class="rounded-element" id="dueDate" placeholder="tanggal selesai" value="2024-01-25">
-      <button class="rounded-element btn-add" onclick="addActivity()">Tambah</button>
+      <h1 class="title">Your Daily Goals</h1>
+      <div class="form">
+         <h3>What is your goals for your life?</h3>
+         <label for="name">Activity Name</label>
+         <input type="text" class="" id="activityName" placeholder="input here">
+         <br>
+         <label for="date">Deadline</label>
+         <input type="date" class="" id="dueDate">
+         <br>
+         <button class="btn-add" onclick="addActivity()">Add Activity</button>
+      </div>
    </div>
    <div class="main"></div>
 

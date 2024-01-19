@@ -4,10 +4,6 @@ const activity = {
    dueDate: dueDate = []
 };
 
- // ambil input nama & tanggal dari form
-const nameInput = document.querySelector('#activityName').value;
-const dateInput= document.querySelector('#dueDate').value;   
-
 // pesan jika data kosong
 const message = 'Pastikan data sudah terisi semua';
 
@@ -16,6 +12,10 @@ let content='';
 
 // menambahkan aktivitas
 function addActivity(){
+   // ambil input nama & tanggal dari form
+   const nameInput = document.querySelector('#activityName').value;
+   const dateInput= document.querySelector('#dueDate').value;   
+   
    if(nameInput && dateInput){
       activity.activityName.push(nameInput);
       activity.dueDate.push(dateInput);
