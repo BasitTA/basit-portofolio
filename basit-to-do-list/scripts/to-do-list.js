@@ -37,6 +37,10 @@ function updateInterface(){
          </div>
       `;
    });
+
+   localStorage.setItem('activity', JSON.stringify(activity));
+
+
    // tampilkan konten ke html
    document.querySelector('.section').innerHTML = content;
    // mengosongkan value dari konten
@@ -51,4 +55,12 @@ function remove(activityId){
    document.getElementById(activityId).remove();
    
    updateInterface();
+}
+
+function removeAll(){
+   localStorage.removeItem('activity');
+   activity.activityName = [];
+   activity.dueDate = [];
+   updateInterface();
+   console.log(activity);
 }

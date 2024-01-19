@@ -10,7 +10,7 @@
    <div class="header">
       <h1 class="title">Your Daily Goals</h1>
       <div class="form">
-         <h3>What is your goals for your life?</h3>
+         <h3>What is your goals for today?</h3>
          <label for="name">Activity Name</label>
          <input type="text" class="" id="activityName" placeholder="input here">
          <br>
@@ -18,11 +18,14 @@
          <input type="date" class="" id="dueDate">
          <br>
          <button class="btn-add" onclick="addActivity()">Add Activity</button>
+         <br>
+         <button class="btn-reset" onclick="removeAll()"><small>Remove All</small></button>
       </div>
    </div>
    <div class="main">
+      <h2>Activity Lists</h2>
       <div class="section"></div>
-      <div class="section-table"></div>
+      <!-- <div class="section-table"></div> -->
    </div>
 
    <script src="scripts/to-do-list.js"></script>
