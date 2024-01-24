@@ -10,23 +10,23 @@
 </head>
 <body>
    <header>
-      <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary py-0">
          <!-- LOGO + NAMA -->
          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> PT. GLOBAL INTI STEEL</a>
+            <a class="navbar-brand" href="index.html"><img src="./img/Logo Browser 5.png" alt="Logo" class="logo-img img-fluid d-inline-block align-text-top"></a>
                
             <!-- NAVBAR MENU -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Produk</a>
-                  <a class="nav-link" href="#">Pelayanan</a>
-                  <a class="nav-link" href="#">Kelebihan</a>
-                  <a class="nav-link" href="#">Team</a>
-                  <a class="nav-link" href="#">Kontak</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#product">Product</a>
+                  <a class="nav-link" href="#service">Service</a>
+                  <a class="nav-link" href="#team">Team</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                   <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
                </div>
             </div>
@@ -39,7 +39,7 @@
             <div class="row g-0 mx-3 text-center justify-content-center">
                <h1 class="mx-3 card-title">PT. GLOBAL INTI STEEL</h1>
                <h3 class="card-text">STOCKIST & SUPPLIER STAINLESS STEEL</h3>
-               <button class="mt-3 col-md-3 col-sm-4 btn btn-primary">Kenali Lebih Dekat</button>
+               <a class="mt-3 col-md-3 col-sm-2 btn btn-primary" href="#about">Kenali Lebih Dekat</a>
             </div>
          </div>
       </div>
@@ -47,8 +47,8 @@
 
    <main class="main">
       <!-- KONTEN TENTANG -->
-      <div class="about">
-         <div class="card mb-3 border-0 rounded-0">
+      <div class="pt-5 about" id="about">
+         <div class="card pt-3 mb-3 border-0 rounded-0">
             <div class="row g-0 mx-3 text-center">
                <div class="mt-3 col-md-5 d-flex align-items-center justify-content-center ">
                   <h2 class="mx-3 card-title">TENTANG PT. GLOBAL INTI STEEL</h2>
@@ -148,8 +148,8 @@
       </div>
 
       <!-- KONTEN PRODUCT -->
-      <div class="product">
-         <div class="card mb-3 border-0 rounded-0">
+      <div class="pt-5 product" id="product">
+         <div class="card pt-3 mb-3 border-0 rounded-0">
             <div class="row g-0">
                <div class="mt-3 col-md-12 d-flex m-auto justify-content-center">
                   <h2 class="card-title">PRODUK</h2>
@@ -162,36 +162,11 @@
                      
                      <div class="container text-center">
                         <div class="row">
-                           <div class="mb-3 col-md-4 col-xs-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                           <div class="mb-3 col-md-4 col-xs-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                           <div class="mb-3 col-md-4 col-sm-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="mb-3 col-md-4 col-xs-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                           <div class="mb-3 col-md-4 col-xs-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                           <div class="mb-3 col-md-4 col-sm-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="mb-3 col-md-4 col-xs-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                           <div class="mb-3 col-md-4 col-xs-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
-                           </div>
-                           <div class="mb-3 col-md-4 col-sm-12">
-                              <img class="img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
+                           <div class="card p-0 mb-3 col-md-4 col-xs-12">
+                              <img class="card-img img-fluid" src="img/office.jpg" class="img-fluid rounded-start" alt="...">
+                              <div class="d-flex align-items-center justify-content-center card-img-overlay">
+                                 <a class="btn btn-primary" href="product-detail.html">Detail Produk</a>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -202,8 +177,8 @@
       </div>
 
       <!-- KONTEN PELAYANAN -->
-      <div class="service">
-         <div class="card mb-3 border-0 rounded-0">
+      <div class="pt-5 service" id="service">
+         <div class="card pt-3 mb-3 border-0 rounded-0">
             <div class="row g-0">
                <div class="mt-3 col-md-12 d-flex m-auto justify-content-center">
                   <h2 class="card-title">PELAYANAN</h2>
@@ -251,8 +226,8 @@
       </div>
 
       <!-- KONTEN TEAM -->
-      <div class="team">
-         <div class="card mb-3 border-0 rounded-0">
+      <div class="pt-5 team" id="team">
+         <div class="card pt-3 mb-3 border-0 rounded-0">
             <div class="row g-0">
                <div class="mt-3 col-md-12 d-flex m-auto justify-content-center">
                   <h2 class="card-title">CONTACT PERSON</h2>
@@ -347,8 +322,8 @@
       </div>
 
       <!-- KONTEN KONTAK -->
-      <div class="contact">
-         <div class="card mb-3 border-0 rounded-0">
+      <div class="pt-5 contact" id="contact">
+         <div class="card pt-3 mb-3 border-0 rounded-0">
             <div class="row g-0">
                <div class="mt-3 col-md-5 d-flex m-auto justify-content-center">
                   <h2 class="card-title">CONTACT</h2>
@@ -390,7 +365,6 @@
             </div>
          </div>
       </div>
-
    </footer>
 
    
