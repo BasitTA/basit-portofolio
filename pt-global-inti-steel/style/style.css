@@ -8,7 +8,18 @@ body{
    background-image: url('/pt-global-inti-steel/img/office.jpg');
    background-size: cover;
    background-repeat: no-repeat;
+   background-position-x: center;
    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Lato', sans-serif;
+   font-weight: 700;
+}
+
+p{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
 }
 
 .title .card{
@@ -17,6 +28,10 @@ body{
    margin-top: 35vh;
    background-color: transparent !important;
    color: white;
+}
+
+.card{
+   background-color: white;
 }
 
 .main{
@@ -67,7 +82,17 @@ body{
    }
 
    .logo-img{
-      width: 70vw;
+      width: 60vw;
+   }
+
+   .product-detail{
+      flex-wrap: wrap;
+   }
+
+   .product-detail-items{
+      margin: auto;
+      position: relative;
+      width: 100%;   
    }
  }
  
@@ -78,7 +103,17 @@ body{
    }
    
    .logo-img{
-      width: 50vw;
+      width: 40vw;
+   }
+
+   .product-detail{
+      flex-wrap: wrap;
+   }
+
+   .product-detail-items{
+      margin: auto;
+      position: relative;
+      width: 100%;   
    }
  }
  
@@ -91,6 +126,16 @@ body{
    .logo-img{
       width: 50vw;
    }
+
+   .product-detail{
+      flex-wrap: wrap;
+   }
+
+   .product-detail-items{
+      margin: auto;
+      position: relative;
+      width: 100%;   
+   }
  } 
  
  /* Large devices (laptops/desktops, 992px and up) */
@@ -102,6 +147,14 @@ body{
    .logo-img{
       width: 30vw;
    }
+
+   .product-detail{
+      display: flex;
+   }
+
+   .product-detail-items{
+      width: 40vw;   
+   }
  } 
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -112,5 +165,13 @@ body{
    
    .logo-img{
       width: 25vw;
+   }
+
+   .product-detail{
+      display: flex;
+   }
+
+   .product-detail-items{
+      width: 40vw;   
    }
  }
