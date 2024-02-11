@@ -1,0 +1,32 @@
+:root {
+  --yellow-color:#f3a446;
+  --brown-color:#a06235;
+  --black-color:#141313;
+  --black-lighter-color:#1d1d1d;
+  --white-color:#efefef;
+}
+
+html{
+  background-image: url('../../public/assets/stone-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.Nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Nav-link, .Nav-icon{
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
