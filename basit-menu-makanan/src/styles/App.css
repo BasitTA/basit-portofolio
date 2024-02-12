@@ -6,12 +6,42 @@
   --white-color:#efefef;
 }
 
-html{
-  background-image: url('../../public/assets/stone-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+/* TEXT COLOR */
+.Yellow-color{
+  color: var(--yellow-color);
+}
+.Brown-color{
+  color: var(--brown-color);
+}
+.Black-color{
+  color: var(--black-color);
+}
+.Black-lighter-color{
+  color: var(--black-lighter-color-color);
+}
+.White-color{
+  color: var(--white-color);
+}
+
+body, html{
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+#root{
+  background-image: url('../../public/assets/black-bg.jpg');
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+.Header{
+  background-image: url('../../public/assets/bakery.png') !important;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  left: 0;
+  background-size:contain;
 }
 
 a{

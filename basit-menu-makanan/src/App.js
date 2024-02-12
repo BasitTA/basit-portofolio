@@ -1,4 +1,9 @@
 import './../src/styles/App.css';
+import './../src/styles/Responsive.css';
+import './../src/styles/Content.css';
+import './../src/styles/Button.css';
+import './../src/styles/Hero.css';
+
 import Navbar from './containers/Navbar';
 import Hero from './containers/Hero';
 import Content from './containers/Content';
@@ -25,13 +30,14 @@ function App() {
   return (
     <>
       {/* Header */}
-      <nav className="Navbar"><Navbar /></nav>
-      {/* Hero */}
-      <section className="Hero"><Hero /></section>
+      <header className="Header">
+        <nav><Navbar /></nav>
+        <section><Hero /></section>
+      </header>
       {/* Content */}
-      <section className="Content"><Content menu={ menu }/></section>
+      <section><Content menu={ menu }/></section>
       {/* Footer */}
-      <footer className="Footer">
+      <footer>
 
       </footer>
     </>

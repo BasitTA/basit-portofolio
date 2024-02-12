@@ -1,6 +1,4 @@
-import '../styles/Button.css';
-
-export default function Button() {
+export default function ButtonAdd() {
 
    return(
       <button className="Button-add">

@@ -15,8 +15,8 @@ export default function Navbar(){
             <a href='#'>Contacts</a>
          </div>
          <div className='Nav-icon'>
-            <a href='#'>Cart</a>
-            <a href='#'>Counter</a>
+            <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+            <p className='White-color'>0</p>
          </div>
       </div>
    );

@@ -1,0 +1,111 @@
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   html{
+      font-size: small;
+   }
+
+   .Content-body-card {
+      width: 100%;
+   }
+
+   .Header{
+      height: 50vh;
+      background-size: cover;
+   }
+
+   .Hero{
+      width: 80vw;
+      text-align: center;
+      margin: 15vh auto;
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   html{
+      font-size: small;
+   }
+
+   .Content-body-card {
+      width: 100%;
+   }
+
+   .Header{
+      height: 50vh;
+      background-size: cover;
+   }
+
+   .Hero{
+      width: 80vw;
+      text-align: center;
+      margin: 15vh auto;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   html{
+      font-size: medium;
+   }
+
+   .Content-body-card {
+      width: 48%;
+   }
+
+   .Header{
+      height: 50vh;
+      background-size: cover;
+   }
+   
+   .Hero{
+      width: 40vw;
+      text-align: left;
+      margin-top: 12vh;
+      margin-left: 7vw;
+   }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   html{
+      font-size: large;
+   }
+
+   .Content-body-card {
+      width: 30%;
+   }
+   
+   .Header{
+      height: 80vh;
+      background-size: cover;
+   }
+
+   .Hero{
+      width: 30vw;
+      margin-top: 25vh;
+      margin-left: 9vw;
+   }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   html{
+      font-size: large;
+   }
+
+   .Content-body-card {
+      width: 24%;
+   }
+
+   .Header{
+      height: 100vh;
+      background-size: cover;
+   }
+
+   .Hero{
+      width: 30vw;
+      margin-top: 40vh;
+      margin-left: 8vw;
+   }
+}
