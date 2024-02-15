@@ -5,16 +5,18 @@ import './../src/styles/Button.css';
 import './../src/styles/Hero.css';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 import { Home } from './pages/Home';
-import { DetailProduct } from './pages/DetailProduct';
+import { ProductDetail } from './pages/ProductDetail';
 import { NotFound } from './pages/NotFound';
 
 export default function App() {
+
   return (
     <Router>
       <Routes>
         <Route path='/' element={ <Home /> } />
-        <Route path='/detail' element={ <DetailProduct /> } />
+        <Route path='/productDetail/:id' Component={ ProductDetail }/>
         <Route path='*' element={ <NotFound /> } />
       </Routes>
     </Router>

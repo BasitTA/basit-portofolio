@@ -25,11 +25,11 @@ export default function Content(props){
             </div>
             <div className="Content-header-right">
                <div className="Content-cart">
-                  <Link><i class="fa-solid fa-basket-shopping"></i></Link>
+                  <Link><i className="fa-solid fa-basket-shopping"></i></Link>
                   <p>0</p>
                </div>
                <div className="Content-info Yellow-color">
-                  <i class="fa-regular fa-clock" style={{ width: '190px' }}></i>
+                  <i className="fa-regular fa-clock" style={{ width: '190px' }}></i>
                   <p>All orders for Tuesday pick up must be placed by 8pm Sunday evening</p>
                </div>
             </div>
@@ -37,9 +37,9 @@ export default function Content(props){
          <div className="Content-body">
             {
                menus.map((arr)=>(
-                  <div className="Content-body-card White-color">
+
+                  <div key={ arr.idMeal }  className="Content-body-card White-color">
                      <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
-                     
                       <i></i>
 
                      <div className="Display-flex Left-sided">
@@ -48,8 +48,8 @@ export default function Content(props){
                      </div>
 
                      <div className="Display-flex Left-sided">
-                        <p>{ arr.strMeal }</p>
-                        <ButtonDetail />
+                        <p >{ arr.strMeal }</p>
+                        <ButtonDetail menu={ arr } />
                      </div>
                   </div>
                ))

@@ -16,7 +16,7 @@ export default function Navbar(){
             <Link>Contacts</Link>
          </div>
          <div className='Nav-icon'>
-            <Link><i class="fa-solid fa-basket-shopping"></i></Link>
+            <Link><i className="fa-solid fa-basket-shopping"></i></Link>
             <p className='White-color'>0</p>
          </div>
       </div>
