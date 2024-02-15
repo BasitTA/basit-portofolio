@@ -4,44 +4,19 @@ import './../src/styles/Content.css';
 import './../src/styles/Button.css';
 import './../src/styles/Hero.css';
 
-import Navbar from './containers/Navbar';
-import Hero from './containers/Hero';
-import Content from './containers/Content';
-import { useState, useEffect, useRef} from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Home } from './pages/Home';
+import { DetailProduct } from './pages/DetailProduct';
+import { NotFound } from './pages/NotFound';
 
-function App() {
-
-  const [menu, setMenu] = useState(null);
-
-  const fetchData = async() => {
-    const link = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert';
-    const data = await fetch(link);
-    const menu = await data.json();
-    setMenu(menu.meals);
-  }
-
-  useEffect(()=>{
-    // run fetch data
-    fetchData();
-  },[menu]);
-
-  if(!menu) return 'Tunggu sebentar, sedang mengambil data..';
-
+export default function App() {
   return (
-    <>
-      {/* Header */}
-      <header className="Header">
-        <nav><Navbar /></nav>
-        <section><Hero /></section>
-      </header>
-      {/* Content */}
-      <section><Content menu={ menu }/></section>
-      {/* Footer */}
-      <footer>
-
-      </footer>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={ <Home /> } />
+        <Route path='/detail' element={ <DetailProduct /> } />
+        <Route path='*' element={ <NotFound /> } />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

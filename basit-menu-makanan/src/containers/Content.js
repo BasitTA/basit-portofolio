@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import Button from "../components/ButtonAdd";
+import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom"; //navigation: kalo mau programatically
+import ButtonDetail from "../components/ButtonDetail";
 
 export default function Content(props){
 
@@ -14,16 +16,16 @@ export default function Content(props){
          <div className="Content-header White-color">
             <div className="Content-header-left">
                <p>Filter by:</p>
-               <a href="">Main Course</a>
-               <a href="">Dessert</a>
-               <a href="">Appetizer</a>
+               <Link>Main Course</Link>
+               <Link>Dessert</Link>
+               <Link>Appetizer</Link>
             </div>
             <div className="Content-header-center Yellow-color">
                <h1>CUSTOMER<br></br>FAVOURITES</h1>
             </div>
             <div className="Content-header-right">
                <div className="Content-cart">
-                  <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                  <Link><i class="fa-solid fa-basket-shopping"></i></Link>
                   <p>0</p>
                </div>
                <div className="Content-info Yellow-color">
@@ -36,7 +38,7 @@ export default function Content(props){
             {
                menus.map((arr)=>(
                   <div className="Content-body-card White-color">
-                     <img src={arr.strMealThumb} className="Img-responsive"></img>
+                     <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
                      
                       <i></i>
 
@@ -47,7 +49,7 @@ export default function Content(props){
 
                      <div className="Display-flex Left-sided">
                         <p>{ arr.strMeal }</p>
-                        <Button />
+                        <ButtonDetail />
                      </div>
                   </div>
                ))

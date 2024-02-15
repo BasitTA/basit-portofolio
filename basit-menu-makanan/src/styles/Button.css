@@ -1,4 +1,4 @@
-.Button-add{
+.Button-add, .Button-detail{
    background-color: var(--yellow-color);
    width: 50px;
    height: 30px;

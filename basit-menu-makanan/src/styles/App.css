@@ -29,6 +29,12 @@ body, html{
   margin: 0;
 }
 
+img{
+  position: relative;
+  border-radius: 50%;
+  width: 50%;
+}
+
 #root{
   background-image: url('../../public/assets/black-bg.jpg');
   background-position: center;
