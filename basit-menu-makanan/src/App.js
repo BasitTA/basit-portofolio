@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/productDetail/:id' Component={ ProductDetail }/>
-        <Route path='*' element={ <NotFound /> } />
+        <Route path='*' Component={ NotFound } />
       </Routes>
     </Router>
   );

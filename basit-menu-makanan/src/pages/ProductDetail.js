@@ -3,18 +3,16 @@ import { useEffect, useState } from "react";
 
 export const ProductDetail = () => {
    const location = useLocation(); //pakai fungsi useLocation utk ambil variabel state
-   const detailMenu = location.state.state;
-   console.log(detailMenu)
+   const detailMenu = location.state.menu;
 
    const [ dataMenu, setDataMenu ] = useState('');
 
+   // ambil data berdasarkan id menu
    const fetchData = async () => {
       const link = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${detailMenu.idMeal}`;
       const data = await fetch(link);
       const menu = await data.json();
-      // console.log(menu.meals[0]);
       setDataMenu(menu.meals[0]);
-      // console.log(dataMenu);
    }
 
    useEffect(()=>{
@@ -22,6 +20,7 @@ export const ProductDetail = () => {
    },[dataMenu]);
 
 
+   // utk membuat 20 ingredients
    let ingredients = [];
    let str='';
    for(let i=0; i<20; i++){
@@ -31,14 +30,16 @@ export const ProductDetail = () => {
 
    const filteredIngredients = ingredients.filter(n=>n); //remove null value
 
-   const listOfIngredients = filteredIngredients.map((arr)=>(
-      <li>{ arr }</li>
+   // utk membuat list of ingredients
+   const listOfIngredients = filteredIngredients.map((arr, i)=>(
+      <li key={ i }>{ arr }</li>
    ));
 
    return(
       <>
          <img src={ dataMenu.strMealThumb } alt={ dataMenu.strMealThumb }></img>
          <h1> { dataMenu.strMeal } </h1>
+
          <div className="Ingredients">
             <h2>Ingredients</h2>
             <ul>
