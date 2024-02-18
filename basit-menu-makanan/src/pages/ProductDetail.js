@@ -6,34 +6,53 @@ export const ProductDetail = () => {
    const detailMenu = location.state.state;
    console.log(detailMenu)
 
-   const { dataMenu, setDataMenu } = useState('');
+   const [ dataMenu, setDataMenu ] = useState('');
 
    const fetchData = async () => {
-      const link = 'www.themealdb.com/api/json/v1/1/lookup.php?i='+detailMenu.idMeal;
+      const link = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${detailMenu.idMeal}`;
       const data = await fetch(link);
-      const dataJson = await data.json();
-      setDataMenu(dataJson);
+      const menu = await data.json();
+      // console.log(menu.meals[0]);
+      setDataMenu(menu.meals[0]);
+      // console.log(dataMenu);
    }
 
    useEffect(()=>{
       fetchData();
    },[dataMenu]);
 
-   console.log(dataMenu);
+
+   let ingredients = [];
+   let str='';
+   for(let i=0; i<20; i++){
+      str = 'dataMenu.strIngredient'+(i+1);
+      ingredients.push(eval(str));  //convert string to code & push to the array
+   }
+
+   const filteredIngredients = ingredients.filter(n=>n); //remove null value
+
+   const listOfIngredients = filteredIngredients.map((arr)=>(
+      <li>{ arr }</li>
+   ));
+
    return(
       <>
-         <img src={ detailMenu.strMealThumb } alt={ detailMenu.strMealThumb }></img>
-         <h1> { detailMenu.strMeal } </h1>
-         <p>Deskripsi</p>
-
-         <div className="ingredients">
-            <h3>Ingredients</h3>
+         <img src={ dataMenu.strMealThumb } alt={ dataMenu.strMealThumb }></img>
+         <h1> { dataMenu.strMeal } </h1>
+         <div className="Ingredients">
+            <h2>Ingredients</h2>
             <ul>
-               {/* <li>{ dataMenu.strIngredient}</li> */}
+               { listOfIngredients }
             </ul>
          </div>
-         <div>
-            Country of Origin: { }
+
+         <div className="Instructions">
+            <h2>Instructions</h2>
+            <p>{ dataMenu.strInstructions }</p>
+         </div>
+
+         <div className="Country">
+            <h3>Country of Origin: { dataMenu.strArea } Food</h3>
          </div>
       </>
    );

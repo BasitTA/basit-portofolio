@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom"; //navigation: kalo mau programatically
 import ButtonDetail from "../components/ButtonDetail";
+import { Filter } from "../utils/Filter";
 
 export default function Content(props){
 
@@ -16,9 +17,9 @@ export default function Content(props){
          <div className="Content-header White-color">
             <div className="Content-header-left">
                <p>Filter by:</p>
-               <Link>Main Course</Link>
+               <Link>Main Course: Beef, Lamb, Seafood, Chicken, Goat, Breakfast, Vegan </Link>
                <Link>Dessert</Link>
-               <Link>Appetizer</Link>
+               <Link>Appetizer / Starter</Link>
             </div>
             <div className="Content-header-center Yellow-color">
                <h1>CUSTOMER<br></br>FAVOURITES</h1>
