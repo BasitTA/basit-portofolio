@@ -7,38 +7,40 @@ export default function Content(props){
 
    const menus = props.menu;
    let menuByCategory = null;
-   let content = '';
+   let strMenu = '';
+   const [content,setContent] = useState('');
 
-
-   content = menus.map((arr)=>(
-      <div key={ arr.idMeal }  className="Content-body-card White-color">
-         <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
-          <i></i>
-
-         <div className="Display-flex Left-sided">
-            <p>weight</p>
-            <p>price</p>
-         </div>
-
-         <div className="Display-flex Left-sided">
-            <p >{ arr.strMeal }</p>
-            <ButtonDetail menu={ arr } />
-         </div>
-      </div>
-   ))
+   // Set Menu Default Value
+   const setDefault = ()=>{
+      strMenu = menus.map((arr)=>(
+         <div key={ arr.idMeal }  className="Content-body-card White-color">
+            <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
+             <i></i>
    
-   // Handling button clicked
-   const btnClicked = async (category)=>{
+            <div className="Display-flex Left-sided">
+               <p>weight</p>
+               <p>price</p>
+            </div>
+   
+            <div className="Display-flex Left-sided">
+               <p >{ arr.strMeal }</p>
+               <ButtonDetail menu={ arr } />
+            </div>
+         </div>
+      ));
+      setContent(strMenu);
+   }
+
+   // Fetch data menu by category
+   const fetchData = async (category)=>{
       const link = 'https://www.themealdb.com/api/json/v1/1/filter.php?c='+category;
       const data = await fetch(link);
       menuByCategory = await data.json();
-      console.log(menuByCategory.meals);
-
-      // check if category has value/not null
+      
       if(menuByCategory.meals){
          let filteredMenu = menuByCategory.meals
          // console.log(menuByCategory.meals);
-         content = filteredMenu.map((arr)=>(
+         strMenu = filteredMenu.map((arr)=>(
             <div key={ arr.idMeal }  className="Content-body-card White-color">
                <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
                 <i></i>
@@ -54,15 +56,24 @@ export default function Content(props){
                </div>
             </div>
          ));
+         setContent(strMenu)
       }
    }
    
-   // use effect for menu,
+   // Handling button clicked
+   const btnClicked = (category)=>{
+      fetchData(category);
+   }
+   
+   // use effect for default menu,
    useEffect(()=>{
-      console.log(menus,'adsfsa');
-      btnClicked();
-   },[menuByCategory]);
-
+      setDefault();
+   },[strMenu]);
+   
+   // use effect for fetching data by category
+   useEffect(()=>{
+      fetchData();
+   },[content]);
    
    return(
       <div>
@@ -89,7 +100,7 @@ export default function Content(props){
                </div>
             </div>
          </div>
-         
+
          {/* All Contents */}
          <div className="Content-body">
             {
