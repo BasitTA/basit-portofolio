@@ -14,10 +14,15 @@
       background-size: cover;
    }
 
+   .Content-header{
+      width: 90%;
+   }
+
    .Hero{
-      width: 80vw;
-      text-align: center;
-      margin: 15vh auto;
+      width: 40vw;
+      text-align: left;
+      margin-top: 19vh;
+      margin-left: 12vw;
    }
 }
 
@@ -36,10 +41,15 @@
       background-size: cover;
    }
 
+   .Content-header{
+      width: 90%;
+   }
+
    .Hero{
-      width: 80vw;
-      text-align: center;
-      margin: 15vh auto;
+      width: 50vw;
+      text-align: left;
+      margin-top: 21vh;
+      margin-left: 9vw;
    }
 }
 
@@ -57,11 +67,14 @@
       height: 50vh;
       background-size: cover;
    }
+
+   .Content-header{
+      width: 90%;
+   }
    
    .Hero{
       width: 40vw;
-      text-align: left;
-      margin-top: 12vh;
+      margin-top: 21vh;
       margin-left: 7vw;
    }
 } 
@@ -69,7 +82,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
    html{
-      font-size: large;
+      font-size: medium;
    }
 
    .Content-body-card {
@@ -81,9 +94,13 @@
       background-size: cover;
    }
 
+   .Content-header{
+      width: 85%;
+   }
+
    .Hero{
-      width: 30vw;
-      margin-top: 25vh;
+      width: 40vw;
+      margin-top: 32vh;
       margin-left: 9vw;
    }
 } 
@@ -91,7 +108,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
    html{
-      font-size: large;
+      font-size: medium;
    }
 
    .Content-body-card {
@@ -103,9 +120,13 @@
       background-size: cover;
    }
 
+   .Content-header{
+      width: 85%;
+   }
+
    .Hero{
-      width: 30vw;
-      margin-top: 40vh;
+      width: 40vw;
+      margin-top: 45vh;
       margin-left: 8vw;
    }
 }

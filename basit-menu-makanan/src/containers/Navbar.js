@@ -7,7 +7,7 @@ export default function Navbar(){
    return(
       <div className='Nav'>
          <div className='Nav-link'>
-            <Link>0812-0000-0000</Link>
+            <Link>Contact Us</Link>
          </div>
          <div className='Nav-link'>
             <Link>About Us</Link>

@@ -30,7 +30,7 @@ body, html{
 }
 
 img{
-  position: relative;
+  /* position: relative; */
   border-radius: 50%;
   width: 50%;
 }
@@ -56,13 +56,19 @@ a{
 }
 
 .Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--black-lighter-color);
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 15%;
 }
 
 .Nav-link, .Nav-icon{
   display: flex;
   justify-content: center;
-  gap: 2px;
+  align-items: center;
+  gap: 10px;
 }

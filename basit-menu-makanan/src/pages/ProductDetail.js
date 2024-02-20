@@ -6,6 +6,10 @@ export const ProductDetail = () => {
    const detailMenu = location.state.menu;
 
    const [ dataMenu, setDataMenu ] = useState('');
+   
+   useEffect(()=>{
+      fetchData();
+   },[dataMenu]);
 
    // ambil data berdasarkan id menu
    const fetchData = async () => {
@@ -14,11 +18,6 @@ export const ProductDetail = () => {
       const menu = await data.json();
       setDataMenu(menu.meals[0]);
    }
-
-   useEffect(()=>{
-      fetchData();
-   },[dataMenu]);
-
 
    // utk membuat 20 ingredients
    let ingredients = [];

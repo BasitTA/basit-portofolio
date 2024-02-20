@@ -1,10 +1,16 @@
-.Button-add, .Button-detail{
+.Button-add{
    background-color: var(--yellow-color);
-   width: 50px;
+   color: var(--black-color);
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   width: 60px;
    height: 30px;
    border: none;
    border-radius: 5px;
-   box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(255, 253, 253, 0.3);
+   /* box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(255, 253, 253, 0.3); */
 }
 
 .Button-shop{

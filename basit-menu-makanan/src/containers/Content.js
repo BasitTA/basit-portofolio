@@ -14,18 +14,20 @@ export default function Content(props){
    const setDefault = ()=>{
       strMenu = menus.map((arr)=>(
          <div key={ arr.idMeal }  className="Content-body-card White-color">
-            <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
-             <i></i>
-   
-            <div className="Display-flex Left-sided">
-               <p>weight</p>
-               <p>price</p>
+            <div>
+               <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
             </div>
    
             <div className="Display-flex Left-sided">
                <p >{ arr.strMeal }</p>
                <ButtonDetail menu={ arr } />
             </div>
+   
+            <div className="Price">
+               <p><small><i> Rp. {arr.idMeal}</i></small></p>
+            </div>
+
+            <Link className="Black-color Add-to-cart">Add to Cart <i className="fa-solid fa-cart-plus"></i></Link>
          </div>
       ));
       setContent(strMenu);
@@ -42,18 +44,20 @@ export default function Content(props){
          // console.log(menuByCategory.meals);
          strMenu = filteredMenu.map((arr)=>(
             <div key={ arr.idMeal }  className="Content-body-card White-color">
-               <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
-                <i></i>
-      
-               <div className="Display-flex Left-sided">
-                  <p>weight</p>
-                  <p>price</p>
+               <div>
+                  <img src={ arr.strMealThumb } className="Img-responsive" alt={ arr.strMeal }></img>
                </div>
       
                <div className="Display-flex Left-sided">
                   <p >{ arr.strMeal }</p>
                   <ButtonDetail menu={ arr } />
                </div>
+      
+               <div className="Price">
+                  <p><small><i> Rp. {arr.idMeal}</i></small></p>
+               </div>
+   
+               <Link className="Black-color Add-to-cart">Add to Cart <i className="fa-solid fa-cart-plus"></i></Link>
             </div>
          ));
          setContent(strMenu)
@@ -76,11 +80,11 @@ export default function Content(props){
    },[content]);
    
    return(
-      <div>
+      <div className="Content">
          <div className="Content-header White-color">
             {/* Filter Btn */}
             <div className="Content-header-left">
-               <p>Filter by:</p>
+               <p><i className="fa-solid fa-filter"></i> Filter by</p>
                <button type="button" onClick={()=>btnClicked('Breakfast')}> Main Course</button>
                <button type="button" onClick={()=>btnClicked('Dessert')}> Dessert </button>
                <button type="button" onClick={()=>btnClicked('Starter')}> Starter </button>
@@ -90,13 +94,9 @@ export default function Content(props){
             </div>
             {/* Cart Btn */}
             <div className="Content-header-right">
-               <div className="Content-cart">
-                  <Link><i className="fa-solid fa-basket-shopping"></i></Link>
-                  <p>0</p>
-               </div>
                <div className="Content-info Yellow-color">
                   <i className="fa-regular fa-clock" style={{ width: '190px' }}></i>
-                  <p>All orders for Tuesday pick up must be placed by 8pm Sunday evening</p>
+                  All orders for Tuesday pick up must be placed by 8pm Sunday evening
                </div>
             </div>
          </div>

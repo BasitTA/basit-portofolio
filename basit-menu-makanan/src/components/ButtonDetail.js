@@ -6,7 +6,7 @@ export default function ButtonDetail(props) {
 // console.log(menu.strMeal)
    return(
       <Link className="Button-detail" to={ `/productDetail/${menu.idMeal}` } state={{ menu: menu }}>
-         Detail
+         <i className="fa-solid fa-circle-info"></i>
       </Link>
    );
 }

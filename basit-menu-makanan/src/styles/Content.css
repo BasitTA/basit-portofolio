@@ -1,26 +1,39 @@
+.Content{
+   padding-bottom: 30px;
+}
+
 /* HEADER CONTENT */
 .Content-header{
    display: flex;
    align-items: center;
    text-align: center;
-   width: 90%;
    margin: auto;
+   padding: 20px 0;
 }
 
 .Content-header div{
    flex: 1; /*ratio 1:1*/
+   width: 33%;
 }
 
-.Content-info, .Content-cart{
+.Content-info{
    display: flex;
    align-items: center;
    justify-content: right;
    text-align: right;
 }
 
-.Content-header-left a, .Content-header-left p{
+.Content-header-left p{
+   margin: 0;   
+}
+
+.Content-header-left, .Content-header-left button{
    display: block;
    text-align: left;
+   margin: 2px 0;
+}
+.Content-header-right{
+   display: flex;
 }
 
 /* BODY CONTENT */
@@ -39,7 +52,7 @@
    background-color: var(--black-lighter-color);
    color: var(--white-color);
    margin: 2px 1.5px 2px 1.5px;
-   padding: 30px 0;
+   padding: 30px 0 30px 0;
    border-radius: 15px;
 }
 
@@ -52,4 +65,22 @@
 .Left-sided{
    text-align: start;
    align-items: center;
+}
+
+.Center-sided{
+   text-align: center;
+   align-items: center;
+}
+
+.Price p{
+   margin: 0;
+   padding: 0;
+   margin-bottom: 20px;
+}
+
+.Add-to-cart{
+   background-color: var(--yellow-color);
+   height: 30px;
+   padding: 3px 10px;
+   border-radius: 5px;
 }
