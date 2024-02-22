@@ -3,6 +3,7 @@ import './../src/styles/Responsive.css';
 import './../src/styles/Content.css';
 import './../src/styles/Button.css';
 import './../src/styles/Hero.css';
+import './../src/styles/ProductDetail.css';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 

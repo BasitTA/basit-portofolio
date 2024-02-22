@@ -1,0 +1,23 @@
+.Product-detail{
+   /* justify-content: center; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   padding: 10px;
+}
+
+.Ingredients{
+   display: inline-block;
+   width: 50%;
+}
+
+.Width-80{
+   width: 80%;
+}
+   
+.Product-detail img{
+   width: 25vw;
+   border-radius: 20px;
+}
