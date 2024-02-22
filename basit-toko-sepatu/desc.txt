@@ -1,0 +1,4 @@
+
+
+teknologi:
+react.js, bootstrap, font-awesome
