@@ -13,7 +13,7 @@ export default function LandingPage(){
          <Hero />
          <div className='container'>
             <Welcome />
-            <UniqueValue />
+            <UniqueValue/>
             <Offering />
             <Review />
             <Partner />

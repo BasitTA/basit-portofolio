@@ -4,14 +4,35 @@ html, body{
    width: 100vw;
    background-image: url('https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    background-size: cover;
-   background-repeat: no-repeat;
+   /* background-repeat: no-repeat; */
 }
 
 .Hero{
-   height: 50vh;
+   height: 40vh;
    width: 100vw;
 }
 
 .Welcome{
-   height: 50vh;
+   height: 60vh;
+}
+
+.Unique-value{
+   height: 80vh;
+}
+
+.Offering{
+   height: 100vh;
+}
+
+.Unique-value .card{
+   border: none;
+   background-color: transparent;
+}
+
+.Img-product img{
+   border-radius: 50px;
+}
+
+#Img-secondary{
+   border-radius: 5px;
 }
