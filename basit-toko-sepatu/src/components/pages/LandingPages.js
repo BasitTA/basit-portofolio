@@ -17,8 +17,8 @@ export default function LandingPage(){
             <Offering />
             <Review />
             <Partner />
-            <Footer />
          </div>
+         <Footer />
       </div>
    );
 }
