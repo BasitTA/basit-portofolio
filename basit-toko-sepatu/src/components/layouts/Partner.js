@@ -8,32 +8,49 @@ export default function Partner(){
       {
          partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
          partnerName: 'Pertamina',
-         partnerProfile: 'Pertamina adalah Perusahaan BUMN yang bergerak di bidang energi dan penyumbang deviden terbesar di Indonesia'
       },
       {
          partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
          partnerName: 'Pertamina',
-         partnerProfile: 'Pertamina adalah Perusahaan BUMN yang bergerak di bidang energi dan penyumbang deviden terbesar di Indonesia'
       },
       {
          partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
          partnerName: 'Pertamina',
-         partnerProfile: 'Pertamina adalah Perusahaan BUMN yang bergerak di bidang energi dan penyumbang deviden terbesar di Indonesia'
+      },
+      {
+         partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
+         partnerName: 'Pertamina',
+      },
+      {
+         partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
+         partnerName: 'Pertamina',
+      },
+      {
+         partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
+         partnerName: 'Pertamina',
+      },
+      {
+         partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
+         partnerName: 'Pertamina',
+      },
+      {
+         partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
+         partnerName: 'Pertamina',
+      },
+      {
+         partnerIcon : 'https://down-id.img.susercontent.com/file/a1eeec26b4ee0b9ce69dfe7a57dc3e93',
+         partnerName: 'Pertamina',
       },
    ]
 
-   const addedClass = {
-      root: 'mx-1',
-   }
-
    const partnerItem = partner.map((arr)=>(
-      <Card img={ arr.partnerIcon } title={ arr.partnerName } desc={ arr.partnerProfile } rootClass={ addedClass.root }/>
+      <img className='col-8 col-md-5 col-lg-3 gap-2' src={ arr.partnerIcon } alt={ arr.partnerName }></img>
    ));
 
    return(
       <div className="Partner text-center row align-items-center justify-content-center">
          <HeaderH1 title={ title }/>
-         <div className='row flex-nowrap overflow-auto text-center justify-content-center'>
+         <div className='rowtext-center justify-content-center'>
             { partnerItem }
          </div>
       </div>

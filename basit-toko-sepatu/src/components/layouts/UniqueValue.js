@@ -5,16 +5,15 @@ export default function UniqueValue(){
 
 
    return(
-      <div className='Unique-value text-center row align-items-center'>
-         <div >
-            <HeaderH1 title='WHY BOSS STORE?'/>
-            <div className='d-flex flex-wrap gap-2 justify-content-center'>
+      <div className='Unique-value text-center row align-items-center justify-content-center min-vh-50'>
+         <div className=''>
+            <HeaderH1 title='WHY BOSS STORE?' h1Class='mb-5' />
+            <div className='d-flex flex-wrap gap-2 justify-content-center p-0 m-0'>
                <Card title='Local Brand' desc='Mengutamakan kemajuan perekonomian Indonesia' icon='fa-solid fa-location-dot'/>
                <Card title='Kualitas' desc='Terbuat dari materi berkualitas tinggi' icon='fa-solid fa-medal'/>
                <Card title='Service' desc='Pelayanan terbaik dan jaminan kenyamanan berbelanja' icon='fa-solid fa-handshake-angle'/>
-               <Card title='Local Brand' desc='Mengutamakan kemajuan perekonomian Indonesia' icon='fa-solid fa-location-dot'/>
-               <Card title='Kualitas' desc='Terbuat dari materi berkualitas tinggi' icon='fa-solid fa-medal'/>
-               <Card title='Service' desc='Pelayanan terbaik dan jaminan kenyamanan berbelanja' icon='fa-solid fa-handshake-angle'/>
+               <Card title='Cepat' desc='Pengiriman secepat kilat' icon='fa-solid fa-truck-fast'/>
+               <Card title='Garansi' desc='Bergaransi 1 Tahun Pemakaian' icon='fa-solid fa-award'/>
             </div>
          </div>
       </div>

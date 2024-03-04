@@ -9,17 +9,17 @@ export default function Card(props){
    const childClass = props.childClass;
    const imgClass = props.imgClass;
    // row flex-nowrap overflow-auto col-6 text-center p-0 m-0
-
+// w-25
    return(
-      <div className={`card col-3 w-25 mt-3 text-center ${rootClass}`}>
+      <div className={ `col-8 col-sm-5 col-lg-2 card text-center justify-content-center px-0 py-0 ${rootClass}` }>
          {/* display icon if there is no image */}
          {(icon) ? <span className=''><i className={ icon }></i></span> : <img src={ img } className={`card-img-top ${imgClass}`} alt="..." />}
          
          <div className={ `card-body ${ childClass }` }>
-            <h3 className="card-title">{ title }</h3>
+            <h4 className="card-title">{ title }</h4>
             <p className="card-text">{ desc }</p>
             {/* change button text based on props */}
-            {(btnText) ? <a href="#" className="btn btn-primary">{ btnText }</a> : <></>}
+            {(btnText) ? <a href="#" className="btn btn-sm btn-dark">{ btnText }</a> : <></>}
          </div>
       </div>
    );

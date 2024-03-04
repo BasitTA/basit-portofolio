@@ -10,7 +10,7 @@ export default function LandingPage(){
 
    return(
       <div className='Landing-page'>
-         <Hero />
+         <Hero /> {/* navbar */}
          <div className='container'>
             <Welcome />
             <UniqueValue/>

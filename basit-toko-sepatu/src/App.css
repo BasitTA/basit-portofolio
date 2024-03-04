@@ -7,23 +7,6 @@ html, body{
    /* background-repeat: no-repeat; */
 }
 
-.Hero{
-   height: 40vh;
-   width: 100vw;
-}
-
-.Welcome{
-   height: 60vh;
-}
-
-.Unique-value{
-   height: 80vh;
-}
-
-.Offering{
-   height: 100vh;
-}
-
 .Footer{
    background-color: rgb(80, 80, 80);
 }
@@ -38,5 +21,5 @@ html, body{
 }
 
 #Img-secondary{
-   border-radius: 5px;
+   border-radius: 20px;
 }
