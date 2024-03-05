@@ -6,11 +6,11 @@ export default function ImgProduct(props){
    const imgSecondary = props.imgSecondary;
 
    const featureItems = feature.map((arr)=>{
-      return <small className='mx-1 text-success  text-start'>+ { arr }</small>
+      return <small key={ Math.random() } className='mx-1 text-success  text-start'>+ { arr }</small>
    })
 
    const imgSecondaryItems = imgSecondary.map((arr)=>{
-      return <img id='Img-secondary' className='col-4 w-35 p-0 m-1' src={ arr } alt={ 'title' } width="" height=""></img>
+      return <img key={ Math.random() }  id='Img-secondary' className='col-4 w-35 p-0 m-1' src={ arr } alt={ 'title' } width="" height=""></img>
    })
 
    return(

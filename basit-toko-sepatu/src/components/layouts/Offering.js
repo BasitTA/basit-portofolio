@@ -11,7 +11,7 @@ export default function Offering(){
    const imgSecondary = [ 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
 
    return(
-      <div className='Offering text-center row align-items-center min-vh-100'>
+      <div id="offer" className='Offering text-center row align-items-center min-vh-100'>
          <div>
             <HeaderH1 title='DEAL TODAY'/>
             <HeaderH4 title='Limited Offer 70% Off Until Tomorrow' h4Class='text-danger'/>

@@ -14,19 +14,19 @@ export default function Navbar(){
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                <ul className="navbar-nav text-center">
                   <li className="nav-item">
-                     <a className="nav-link active" aria-current="page" href="#">Home</a>
+                     <a className="nav-link" href="#">Home</a>
                   </li>
                   <li className="nav-item">
-                     <a className="nav-link" href="#">Why Us?</a>
+                     <a className="nav-link" href="#unique-value">Why Us?</a>
                   </li>
                   <li className="nav-item">
-                     <a className="nav-link" href="#">Limited Offer</a>
+                     <a className="nav-link" href="#offer">Limited Offer</a>
                   </li>
                   <li className="nav-item">
-                     <a className="nav-link" href="#">Testimony</a>
+                     <a className="nav-link" href="#review">Testimony</a>
                   </li>
                   <li className="nav-item">
-                     <a className="nav-link" href="#">Partners</a>
+                     <a className="nav-link" href="#partner">Partners</a>
                   </li>
                </ul>
             </div>

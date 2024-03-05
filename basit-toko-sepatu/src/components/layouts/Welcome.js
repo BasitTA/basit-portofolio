@@ -4,7 +4,7 @@ import Card from "../fragments/Card";
 
 export default function Welcome(){
    return(
-      <div className='Welcome text-center row align-items-center min-vh-100'>
+      <div className='Welcome text-center row align-items-center min-vh-100 mb-5'>
          <div className='row justify-content-center mt-5 pb-5'>
             <HeaderH1 title='YOU ARE THE BOSS NOW!' h1Class='mt-4'/>
             <HeaderH5 title='Rasakan pengalaman baru menjadi boss muda yang berkarakter'/>

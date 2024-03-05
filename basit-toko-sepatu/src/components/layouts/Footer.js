@@ -27,7 +27,22 @@ export default function Footer(){
    const dataCategory = {
       title : 'Category',
       item :[
-         { detail : 'Boots' }, { detail : 'Loafers' }, { detail : 'Sneakers' }, { detail : 'Running' }, 
+         { 
+            // icon : 'fa-solid fa-shoe-prints',
+            detail : 'Boots'
+         }, 
+         {  
+            // icon : 'fa-solid fa-shoe-prints',
+            detail : 'Loafers' 
+         }, 
+         {  
+            icon : 'fa-solid fa-star',
+            detail : 'Sneakers' 
+         }, 
+         {  
+            // icon : 'fa-solid fa-shoe-prints',
+            detail : 'Running' 
+         }, 
       ]
    }
    
@@ -62,7 +77,7 @@ export default function Footer(){
    }
 
    return(
-      <div className='Footer row justify-content-center text-center align-items-center mt-3'>
+      <div className='Footer row justify-content-center text-center align-items-center mt-3 bg-dark'>
          <div className='row justify-content-center text-center'>
             { contact }
             { category }
