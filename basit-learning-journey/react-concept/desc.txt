@@ -1,0 +1,4 @@
+state : class component
+react-hook : state utk functional component
+
+react-hook fungsinya banyak, salah satunya usestate, useref, usememo, useeffect, dll

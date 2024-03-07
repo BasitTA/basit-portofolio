@@ -1,0 +1,12 @@
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+  border: solid 1px;
+  margin: 2px 5px;
+  padding: 2px 5px;
+}
